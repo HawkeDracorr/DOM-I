@@ -77,6 +77,9 @@ contactInfo[0].innerHTML = siteContent['contact']['address']
 contactInfo[1].innerHTML = siteContent['contact']['phone']
 contactInfo[2].innerHTML = siteContent['contact']['email']
 
+// footer
+let footer
+
 
 
 
