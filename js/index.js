@@ -56,6 +56,20 @@ navItem[3].innerHTML = siteContent['nav']['nav-item-4']
 navItem[4].innerHTML = siteContent['nav']['nav-item-5']
 navItem[5].innerHTML = siteContent['nav']['nav-item-6']
 
+let navNode = document.createElement('a')
+let navNode2 = document.createElement('a')
+let newLink = document.createTextNode('Buy Fruit')
+let newLink2 = document.createTextNode('Declare Said Fruit')
+navNode.appendChild(newLink)
+navNode2.appendChild(newLink2)
+
+document.querySelector('nav').appendChild(navNode);
+document.querySelector('nav').appendChild(navNode2);
+
+navItem.forEach(function(element) {
+  element.style.color = 'green'
+});
+
 
 let btn = document.querySelector(".cta button");
 btn.innerHTML = siteContent["cta"]["button"];
