@@ -44,6 +44,19 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 let headerImg = document.getElementById("cta-img");
 headerImg.setAttribute('src', siteContent["cta"]["img-src"])
 
+let mainImg = document.getElementById("middle-img")
+mainImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+
+// Nav items
+let navItem = document.querySelectorAll('.container a')
+navItem[0].innerHTML = siteContent['nav']['nav-item-1']
+navItem[1].innerHTML = siteContent['nav']['nav-item-2']
+navItem[2].innerHTML = siteContent['nav']['nav-item-3']
+navItem[3].innerHTML = siteContent['nav']['nav-item-4']
+navItem[4].innerHTML = siteContent['nav']['nav-item-5']
+navItem[5].innerHTML = siteContent['nav']['nav-item-6']
+
+
 let btn = document.querySelector(".cta button");
 btn.innerHTML = siteContent["cta"]["button"];
 
@@ -78,7 +91,8 @@ contactInfo[1].innerHTML = siteContent['contact']['phone']
 contactInfo[2].innerHTML = siteContent['contact']['email']
 
 // footer
-let footer
+let footer =document.querySelector('footer')
+footer.innerHTML = siteContent['footer']['copyright']
 
 
 
