@@ -37,7 +37,7 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+// Images
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
@@ -49,5 +49,35 @@ btn.innerHTML = siteContent["cta"]["button"];
 
 let subheader = document.querySelector(".cta h1");
 subheader.innerHTML = siteContent["cta"]["h1"];
+
+let mainSubTitle = document.querySelectorAll(".main-content h4");
+let mainPara = document.querySelectorAll(".main-content p");
+
+mainSubTitle[0].innerHTML = siteContent["main-content"]["features-h4"]
+mainSubTitle[1].innerHTML = siteContent["main-content"]["about-h4"]
+mainSubTitle[2].innerHTML = siteContent["main-content"]["services-h4"]
+mainSubTitle[3].innerHTML = siteContent["main-content"]["product-h4"]
+mainSubTitle[4].innerHTML = siteContent["main-content"]["vision-h4"]
+
+mainPara[0].innerHTML = siteContent['main-content']['features-content']
+mainPara[1].innerHTML = siteContent['main-content']['about-content']
+mainPara[2].innerHTML = siteContent['main-content']['services-content']
+mainPara[3].innerHTML = siteContent['main-content']['product-content']
+mainPara[4].innerHTML = siteContent['main-content']['vision-content']
+
+// Contact Section
+
+// contact Heading
+let contactHeading = document.querySelector('.contact h4')
+contactHeading.innerHTML = siteContent['contact']['contact-h4']
+
+// contact Info
+let contactInfo = document.querySelectorAll('.contact p')
+contactInfo[0].innerHTML = siteContent['contact']['address']
+contactInfo[1].innerHTML = siteContent['contact']['phone']
+contactInfo[2].innerHTML = siteContent['contact']['email']
+
+
+
 
 // awoo
