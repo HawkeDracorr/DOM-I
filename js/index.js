@@ -41,5 +41,13 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+let headerImg = document.getElementById("cta-img");
+headerImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+let btn = document.querySelector(".cta button");
+btn.innerHTML = siteContent["cta"]["button"];
+
+let subheader = document.querySelector(".cta h1");
+subheader.innerHTML = siteContent["cta"]["h1"];
 
 // awoo
