@@ -48,7 +48,7 @@ let mainImg = document.getElementById("middle-img")
 mainImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 // Nav items
-let navItem = document.querySelectorAll('.container a')
+let navItem = document.querySelectorAll('nav a')
 navItem[0].innerHTML = siteContent['nav']['nav-item-1']
 navItem[1].innerHTML = siteContent['nav']['nav-item-2']
 navItem[2].innerHTML = siteContent['nav']['nav-item-3']
@@ -70,6 +70,7 @@ navItem.forEach(function(element) {
   element.style.color = 'green'
 });
 
+console.log(navItem);
 
 let btn = document.querySelector(".cta button");
 btn.innerHTML = siteContent["cta"]["button"];
